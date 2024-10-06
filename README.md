@@ -35,3 +35,12 @@ MicroLink is a full-stack link shortening web service using (lyton's personal do
   - Sendgrid
 - Storage:
   - AWS S3 Bucket
+- Hosting:
+  - TBD
+
+## Other developer tools
+
+- Formatting:
+  - Prettier
+- Linting:
+  - [gts](https://github.com/google/gts)
