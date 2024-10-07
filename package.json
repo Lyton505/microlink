@@ -1,27 +1,20 @@
 {
-  "name": "",
-  "version": "0.0.0",
-  "description": "",
-  "main": "build/src/index.js",
-  "types": "build/src/index.d.ts",
-  "files": [
-    "build/src"
+  "name": "microlink",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
   ],
-  "license": "Apache-2.0",
-  "keywords": [],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "gts lint",
-    "clean": "gts clean",
-    "compile": "tsc",
-    "fix": "gts fix",
-    "prepare": "husky",
-    "pretest": "npm run compile",
-    "posttest": "npm run lint"
+    "start:frontend": "npm run start --workspace=frontend",
+    "start:backend": "npm run start --workspace=backend",
+    "build": "npm run build --workspaces",
+    "lint": "npm run lint --workspaces",
+    "fix": "npm run fix --workspaces",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "@types/node": "20.12.7",
-    "gts": "^5.3.1",
     "husky": "^9.1.6",
     "typescript": "^5.1.6"
   }
