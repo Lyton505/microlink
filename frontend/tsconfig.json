@@ -1,9 +1,7 @@
 {
-  "extends": "../tsconfig.json",
-  "compilerOptions": {
-    "rootDir": "./",
-    "outDir": "../build/frontend"
-  },
-  "include": ["./**/*.ts", "./**/*.tsx"],
-  "exclude": ["../node_modules", "../build/frontend"]
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }
