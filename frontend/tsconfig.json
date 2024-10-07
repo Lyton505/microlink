@@ -1,8 +1,9 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "build"
+    "rootDir": "./",
+    "outDir": "../build/frontend"
   },
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["./**/*.ts", "./**/*.tsx"],
+  "exclude": ["../node_modules", "../build/frontend"]
 }

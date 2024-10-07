@@ -2,14 +2,15 @@
   "name": "microlink-backend",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "start": "node build/src/index.js",
-    "dev": "nodemon src/index.ts",
-    "build": "tsc",
-    "lint": "gts lint",
-    "clean": "gts clean",
-    "compile": "tsc",
-    "fix": "gts fix"
+    "start": "node build/server.js",
+    "dev": "nodemon server.ts",
+    "build": "tsc .",
+    "lint": "gts lint .",
+    "clean": "gts clean .",
+    "compile": "tsc .",
+    "fix": "gts fix ."
   },
   "dependencies": {},
   "devDependencies": {
