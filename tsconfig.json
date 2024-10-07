@@ -1,9 +1,10 @@
 {
   "extends": "./node_modules/gts/tsconfig-google.json",
-  "compilerOptions": {
-    "rootDir": ".",
-    "outDir": "build"
-  },
-  "include": [],
-  "exclude": ["node_modules", "frontend"]
+    "compilerOptions": {
+        "rootDir": ".",
+        "outDir": "build",
+        "esModuleInterop": true
+    },
+    "include": [],
+    "exclude": ["node_modules", "frontend", "backend"]
 }
