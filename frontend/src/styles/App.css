@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: 'Raleway', 'Inter', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Remove default styles */
+  list-style: none;
+  text-decoration: none;
+
+  .hover\:cursor-scissors:hover {
+    cursor:
+      url('../assets/scissors.svg') 0 20,
+      auto;
+  }
+}
+
+img,
+video {
+  max-width: 30%;
+  max-height: auto;
+}
